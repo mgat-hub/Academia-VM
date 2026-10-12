@@ -5,56 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aulas e serviços — Academia</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/images/favicon-180.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon-180.png">
 </head>
 <body>
-    <header>
-        <h1>Academia Científica VM</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre a academia</a></li>
-                <li><a href="aulas-servicos.html" aria-current="page">Aulas e serviços</a></li>
-                <li><a href="tornar-se-membro.html">Como tornar-se membro</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-            </ul>
-        </nav>
+    <a href="#main-content" class="skip-link">Saltar para o conteúdo principal</a>
+    <header class="site-header">
+        <div class="header-inner container">
+            <div class="site-logo">
+                <a href="index.html" aria-label="Academia Científica VM — Página inicial">
+                    <img src="assets/images/logo.svg" alt="" width="180" height="14">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Alternar menu de navegação">
+                <span class="nav-toggle-icon" aria-hidden="true"></span>
+            </button>
+            <nav class="site-nav" id="primary-navigation" role="navigation" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre a academia</a></li>
+                    <li><a href="aulas-servicos.html" aria-current="page">Aulas e serviços</a></li>
+                    <li><a href="tornar-se-membro.html">Como tornar-se membro</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Apresentação das aulas</h2>
-            <p>A lista de aulas e serviços está confirmada para o site.</p>
-        </section>
-        <section>
-            <h2>Disciplinas e serviços</h2>
-            <ul>
-                <li>Reforço em Matemática</li>
-                <li>Reforço em Física</li>
-                <li>Reforço em Química</li>
-                <li>Desenho gráfico</li>
-                <li>Estatística</li>
-                <li>Preparatório</li>
-                <li>Análise Matemática</li>
-                <li>Álgebra Linear</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Modalidades</h2>
-            <p>Aulas presenciais, online e ao domicílio.</p>
-        </section>
-        <section>
-            <h2>Aulas presenciais</h2>
-            <p>Endereço: Sapú 2, Via Expressa, 11 de Novembro, paragem da Mutamba.</p>
-        </section>
-        <section>
-            <h2>Aulas ao domicílio</h2>
-            <p>Disponibilidade e cobertura devem ser consultadas pelo WhatsApp <a href="tel:+244994729092">+244 994 729 092</a>.</p>
-        </section>
-        <section>
-            <h2>Contacto</h2>
-            <p><a href="https://wa.me/244994729092">WhatsApp: +244 994 729 092</a></p>
-        </section>
+    <main id="main-content">
+        <div class="page-hero container">
+            <h1>Aulas e serviços</h1>
+        </div>
+        <div class="container">
+            <section>
+                <h2>Apresentação das aulas</h2>
+                <p>A lista de aulas e serviços está confirmada para o site.</p>
+            </section>
+            <section>
+                <h2>Disciplinas e serviços</h2>
+                <ul>
+                    <li>Reforço em Matemática</li>
+                    <li>Reforço em Física</li>
+                    <li>Reforço em Química</li>
+                    <li>Desenho gráfico</li>
+                    <li>Estatística</li>
+                    <li>Preparatório</li>
+                    <li>Análise Matemática</li>
+                    <li>Álgebra Linear</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Modalidades</h2>
+                <p>Aulas presenciais, online e ao domicílio.</p>
+            </section>
+            <section>
+                <h2>Aulas presenciais</h2>
+                <p>Endereço: Sapú 2, Via Expressa, 11 de Novembro, paragem da Mutamba.</p>
+            </section>
+            <section>
+                <h2>Aulas ao domicílio</h2>
+                <p>Disponibilidade e cobertura devem ser consultadas pelo WhatsApp <a href="tel:+244994729092">+244 994 729 092</a>.</p>
+            </section>
+            <section>
+                <h2>Contacto</h2>
+                <p><a href="https://wa.me/244994729092" class="btn btn-primary">WhatsApp: +244 994 729 092</a></p>
+            </section>
+        </div>
     </main>
-    <footer>
+    <footer class="site-footer">
         <p>Academia Científica VM</p>
     </footer>
     <script src="assets/js/main.js" defer></script>
