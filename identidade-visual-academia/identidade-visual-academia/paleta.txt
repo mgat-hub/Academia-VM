@@ -1,0 +1,24 @@
+PALETA – Academia científica vm
+Valores medidos no cartaz (JPEG 1000x1600, comprimido). Por confirmar com a arte original.
+
+CORES DA MARCA (medidas no cartaz)
+Azul principal ........ #3A4A88   RGB 58, 74, 136    barra superior; texto sobre branco; blocos
+Azul das caixas ....... #414785   RGB 65, 71, 133    quase igual ao principal; usar só o principal
+Laranja ............... #EA6F33   RGB 234, 111, 51   fundo do cartaz; faixas e decoração
+Branco ................ #FFFFFF   RGB 255, 255, 255  texto sobre azul, capelo, linhas
+
+PRESENTES NO CARTAZ MAS FORA DA MARCA
+Lima (copo de lápis) .. #A8A237   RGB 168, 162, 55   vem da fotografia
+Verde WhatsApp ........ #7AB75F   RGB 122, 183, 95   ícone de terceiros
+
+DERIVADAS (sugestões para o site; NÃO existem no cartaz)
+Azul escuro (texto) ... #1F2A5C   RGB 31, 42, 92     texto corrente
+Laranja escuro ........ #C2410C   RGB 194, 65, 12    botões com texto branco (contraste 5,18:1)
+Laranja hover ......... #9A3412   RGB 154, 52, 18    estado hover/ativo
+Fundo claro quente .... #FFF7F2   RGB 255, 247, 242  fundos de secção
+
+CONTRASTES (WCAG)
+Branco sobre azul #3A4A88 ........ 8,35:1  passa
+Branco sobre laranja #EA6F33 ..... 3,08:1  só texto grande
+Azul #3A4A88 sobre laranja ....... 2,71:1  falha
+Branco sobre laranja escuro #C2410C  5,18:1  passa
