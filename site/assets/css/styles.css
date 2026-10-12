@@ -55,6 +55,13 @@
 }
 @font-face {
   font-family: 'Barlow Condensed';
+  src: url('../fonts/barlow-condensed-latin-600-normal.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Barlow Condensed';
   src: url('../fonts/barlow-condensed-latin-400-italic.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
@@ -116,7 +123,7 @@ body {
 /* --- Tipografia --- */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-titulos);
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.2;
   color: var(--cor-azul-principal);
   margin-top: 0;
@@ -230,7 +237,7 @@ a:focus-visible {
   display: block;
   padding: var(--espaco-sm) var(--espaco-md);
   font-family: var(--font-titulos);
-  font-weight: 400;
+  font-weight: 600;
   font-size: 0.95rem;
   color: var(--cor-azul-principal);
   text-decoration: none;
@@ -332,7 +339,7 @@ section:last-of-type {
   gap: var(--espaco-sm);
   padding: var(--espaco-sm) var(--espaco-lg);
   font-family: var(--font-titulos);
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1rem;
   line-height: 1.5;
   text-decoration: none;
