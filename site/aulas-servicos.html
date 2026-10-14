@@ -4,78 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aulas e serviços — Academia</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="src/styles/main.css">
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
     <link rel="icon" type="image/png" sizes="180x180" href="assets/images/favicon-180.png">
     <link rel="apple-touch-icon" href="assets/images/favicon-180.png">
 </head>
-<body>
+<body class="mgat-bg">
     <a href="#main-content" class="skip-link">Saltar para o conteúdo principal</a>
-    <header class="site-header">
-        <div class="header-inner container">
-            <div class="site-logo">
-                <a href="index.html" aria-label="Academia Científica VM — Página inicial">
-                    <img src="assets/images/logo.svg" alt="" width="180" height="14">
-                </a>
+
+    <button class="hamburger" aria-expanded="false" aria-controls="sidebar" aria-label="Abrir menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+    </button>
+
+    <aside class="sidebar" id="sidebar" role="navigation" aria-label="Navegação principal">
+        <div class="sidebar-logo">
+            <a href="index.html" aria-label="Academia Científica VM — Página inicial">
+                <img src="assets/images/logo.svg" alt="" width="180" height="14">
+            </a>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="nav-link">Início</a>
+            <a href="sobre.html" class="nav-link">Sobre a academia</a>
+            <a href="aulas-servicos.html" class="nav-link" aria-current="page">Aulas e serviços</a>
+            <a href="tornar-se-membro.html" class="nav-link">Como tornar-se membro</a>
+            <a href="contactos.html" class="nav-link">Contactos</a>
+        </nav>
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebar-overlay" aria-hidden="true"></div>
+
+    <main class="main-content" id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-bg-pattern" aria-hidden="true"></div>
+            <div class="hero-bg-overlay" aria-hidden="true"></div>
+            <div class="hero-content">
+                <h1 id="hero-title" class="hero-title">Aulas e serviços</h1>
+                <p class="hero-subtitle">Disciplinas, modalidades e horários disponíveis</p>
             </div>
-            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Alternar menu de navegação">
-                <span class="nav-toggle-icon" aria-hidden="true"></span>
-            </button>
-            <nav class="site-nav" id="primary-navigation" role="navigation" aria-label="Navegação principal">
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre a academia</a></li>
-                    <li><a href="aulas-servicos.html" aria-current="page">Aulas e serviços</a></li>
-                    <li><a href="tornar-se-membro.html">Como tornar-se membro</a></li>
-                    <li><a href="contactos.html">Contactos</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main id="main-content">
-        <div class="page-hero container">
-            <h1>Aulas e serviços</h1>
-        </div>
-        <div class="container">
-            <section>
-                <h2>Apresentação das aulas</h2>
-                <p>A lista de aulas e serviços está confirmada para o site.</p>
-            </section>
-            <section>
-                <h2>Disciplinas e serviços</h2>
-                <ul>
-                    <li>Reforço em Matemática</li>
-                    <li>Reforço em Física</li>
-                    <li>Reforço em Química</li>
-                    <li>Desenho gráfico</li>
-                    <li>Estatística</li>
-                    <li>Preparatório</li>
-                    <li>Análise Matemática</li>
-                    <li>Álgebra Linear</li>
-                </ul>
-            </section>
-            <section>
-                <h2>Modalidades</h2>
-                <p>Aulas presenciais, online e ao domicílio.</p>
-            </section>
-            <section>
-                <h2>Aulas presenciais</h2>
-                <p>Endereço: Sapú 2, Via Expressa, 11 de Novembro, paragem da Mutamba.</p>
-            </section>
-            <section>
-                <h2>Aulas ao domicílio</h2>
-                <p>Disponibilidade e cobertura devem ser consultadas pelo WhatsApp <a href="tel:+244994729092">+244 994 729 092</a>.</p>
-            </section>
-            <section>
-                <h2>Contacto</h2>
-                <p><a href="https://wa.me/244994729092" class="btn btn-primary">WhatsApp: +244 994 729 092</a></p>
-            </section>
-        </div>
+        </section>
+
+        <section class="section section-bg" aria-labelledby="apresentacao-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="apresentacao-title" class="section-title">Apresentação das aulas</h2>
+                </header>
+                <div class="content-block">
+                    <p>A lista de aulas e serviços está confirmada para o site.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="disciplinas-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="disciplinas-title" class="section-title">Disciplinas e serviços</h2>
+                </header>
+                <div class="content-block">
+                    <ul style="list-style: disc; padding-left: var(--space-8); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                        <li>Reforço em Matemática</li>
+                        <li>Reforço em Física</li>
+                        <li>Reforço em Química</li>
+                        <li>Desenho gráfico</li>
+                        <li>Estatística</li>
+                        <li>Preparatório</li>
+                        <li>Análise Matemática</li>
+                        <li>Álgebra Linear</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-bg" aria-labelledby="modalidades-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="modalidades-title" class="section-title">Modalidades</h2>
+                </header>
+                <div class="content-block">
+                    <p>Aulas presenciais, online e ao domicílio.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="presenciais-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="presenciais-title" class="section-title">Aulas presenciais</h2>
+                </header>
+                <div class="content-block">
+                    <p>Endereço: Sapú 2, Via Expressa, 11 de Novembro, paragem da Mutamba.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-bg" aria-labelledby="domicilio-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="domicilio-title" class="section-title">Aulas ao domicílio</h2>
+                </header>
+                <div class="content-block">
+                    <p>Disponibilidade e cobertura devem ser consultadas pelo WhatsApp <a href="tel:+244994729092">+244 994 729 092</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="contacto-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="contacto-title" class="section-title">Contacto</h2>
+                </header>
+                <div class="content-block-centered">
+                    <a href="https://wa.me/244994729092" class="btn btn-primary" target="_blank" rel="noopener">WhatsApp: +244 994 729 092</a>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="site-footer">
-        <p>Academia Científica VM</p>
+
+    <footer class="footer">
+        <p class="footer-text">Academia Científica VM</p>
     </footer>
-    <script src="assets/js/main.js" defer></script>
+
+    <script src="src/styles/main.js" defer></script>
 </body>
 </html>

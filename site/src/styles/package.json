@@ -1,0 +1,40 @@
+{
+  "name": "@mgat/design-system",
+  "version": "1.0.0",
+  "description": "MGAT Design System - Complete visual design system for educational/tutoring websites",
+  "main": "design-tokens.css",
+  "style": "design-tokens.css",
+  "files": [
+    "design-tokens.css",
+    "components.css",
+    "layout.css",
+    "backgrounds.css",
+    "main.js",
+    "index.html",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'No build step required - pure CSS/JS'",
+    "lint": "stylelint **/*.css"
+  },
+  "keywords": [
+    "design-system",
+    "css",
+    "components",
+    "educational",
+    "tutoring",
+    "glass-morphism",
+    "responsive"
+  ],
+  "author": "MGAT Explicações",
+  "license": "MIT",
+  "devDependencies": {
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0"
+  },
+  "peerDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

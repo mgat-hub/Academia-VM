@@ -4,61 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tornar-se Membro — Academia</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="src/styles/main.css">
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
     <link rel="icon" type="image/png" sizes="180x180" href="assets/images/favicon-180.png">
     <link rel="apple-touch-icon" href="assets/images/favicon-180.png">
 </head>
-<body>
+<body class="mgat-bg">
     <a href="#main-content" class="skip-link">Saltar para o conteúdo principal</a>
-    <header class="site-header">
-        <div class="header-inner container">
-            <div class="site-logo">
-                <a href="index.html" aria-label="Academia Científica VM — Página inicial">
-                    <img src="assets/images/logo.svg" alt="" width="180" height="14">
-                </a>
+
+    <button class="hamburger" aria-expanded="false" aria-controls="sidebar" aria-label="Abrir menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+    </button>
+
+    <aside class="sidebar" id="sidebar" role="navigation" aria-label="Navegação principal">
+        <div class="sidebar-logo">
+            <a href="index.html" aria-label="Academia Científica VM — Página inicial">
+                <img src="assets/images/logo.svg" alt="" width="180" height="14">
+            </a>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="nav-link">Início</a>
+            <a href="sobre.html" class="nav-link">Sobre a academia</a>
+            <a href="aulas-servicos.html" class="nav-link">Aulas e serviços</a>
+            <a href="tornar-se-membro.html" class="nav-link" aria-current="page">Como tornar-se membro</a>
+            <a href="contactos.html" class="nav-link">Contactos</a>
+        </nav>
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebar-overlay" aria-hidden="true"></div>
+
+    <main class="main-content" id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-bg-pattern" aria-hidden="true"></div>
+            <div class="hero-bg-overlay" aria-hidden="true"></div>
+            <div class="hero-content">
+                <h1 id="hero-title" class="hero-title">Como tornar-se membro</h1>
+                <p class="hero-subtitle">Saiba como fazer parte da nossa comunidade académica</p>
             </div>
-            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Alternar menu de navegação">
-                <span class="nav-toggle-icon" aria-hidden="true"></span>
-            </button>
-            <nav class="site-nav" id="primary-navigation" role="navigation" aria-label="Navegação principal">
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre a academia</a></li>
-                    <li><a href="aulas-servicos.html">Aulas e serviços</a></li>
-                    <li><a href="tornar-se-membro.html" aria-current="page">Como tornar-se membro</a></li>
-                    <li><a href="contactos.html">Contactos</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main id="main-content">
-        <div class="page-hero container">
-            <h1>Como tornar-se membro</h1>
-        </div>
-        <div class="container">
-            <section>
-                <h2>Introdução</h2>
-                <p>Conteúdo institucional a inserir.</p>
-            </section>
-            <section>
-                <h2>Critérios para candidatura</h2>
-                <p>Conteúdo institucional a inserir.</p>
-            </section>
-            <section>
-                <h2>Instruções de candidatura</h2>
-                <p>Conteúdo institucional a inserir.</p>
-            </section>
-            <section>
-                <h2>Candidatura pelo WhatsApp</h2>
-                <p><a href="https://wa.me/244994729092" class="btn btn-primary">Contactar pelo WhatsApp para candidatar-se</a></p>
-            </section>
-        </div>
+        </section>
+
+        <section class="section section-bg" aria-labelledby="introducao-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="introducao-title" class="section-title">Introdução</h2>
+                </header>
+                <div class="content-block">
+                    <p>Conteúdo institucional a inserir.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="criterios-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="criterios-title" class="section-title">Critérios para candidatura</h2>
+                </header>
+                <div class="content-block">
+                    <p>Conteúdo institucional a inserir.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-bg" aria-labelledby="instrucoes-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="instrucoes-title" class="section-title">Instruções de candidatura</h2>
+                </header>
+                <div class="content-block">
+                    <p>Conteúdo institucional a inserir.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="candidatura-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="candidatura-title" class="section-title">Candidatura pelo WhatsApp</h2>
+                </header>
+                <div class="content-block-centered">
+                    <a href="https://wa.me/244994729092" class="btn btn-primary" target="_blank" rel="noopener">Contactar pelo WhatsApp para candidatar-se</a>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="site-footer">
-        <p>Academia Científica VM</p>
+
+    <footer class="footer">
+        <p class="footer-text">Academia Científica VM</p>
     </footer>
-    <script src="assets/js/main.js" defer></script>
+
+    <script src="src/styles/main.js" defer></script>
 </body>
 </html>

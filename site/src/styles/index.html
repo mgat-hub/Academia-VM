@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MGAT Design System - Reference Implementation</title>
+  <meta name="description" content="Complete design system for educational/tutoring websites">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="design-tokens.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="backgrounds.css">
+</head>
+<body class="mgat-bg-css-only">
+  <!-- Hamburger Menu (Mobile) -->
+  <button class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">☰</button>
+
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar" id="sidebar" role="navigation" aria-label="Navegação principal">
+    <div class="sidebar-logo">
+      <img src="../MGAT_Kit_Visual/MGAT_Kit/logo/logo-principal.png" alt="MGAT Explicações" width="140">
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#como-funciona">Como Funciona</a></li>
+        <li><a class="nav-link" href="#turmas">Turmas</a></li>
+        <li><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Sidebar Overlay -->
+  <div class="sidebar-overlay" id="sidebar-overlay" aria-hidden="true"></div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-bg-pattern"></div>
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">MGAT Explicações</h1>
+        <p class="hero-subtitle">Apoio escolar personalizado para alunos do 4.º, 5.º e 6.º anos. Aprendizagem simples, prática e acompanhada.</p>
+        <div class="hero-buttons btn-group">
+          <a href="#contato" class="btn btn-primary">Reservar Vaga</a>
+          <a href="#como-funciona" class="btn btn-secondary">Como Funciona</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como Funciona Section -->
+    <section class="section" id="como-funciona">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Como Funciona</h2>
+          <p class="section-subtitle">Um processo simples em 3 passos para garantir o melhor acompanhamento</p>
+        </header>
+        <div class="cards-grid">
+          <article class="card card-glass" data-animate>
+            <div class="card-icon">📊</div>
+            <h3>Avaliação Inicial</h3>
+            <p>Percebemos as dificuldades e necessidades específicas de cada aluno através de uma avaliação diagnóstica.</p>
+          </article>
+          <article class="card card-glass" data-animate>
+            <div class="card-icon">👥</div>
+            <h3>Aulas em Grupo</h3>
+            <p>Os alunos aprendem, praticam e participam em conjunto em turmas reduzidas para máxima atenção.</p>
+          </article>
+          <article class="card card-glass" data-animate>
+            <div class="card-icon">📈</div>
+            <h3>Acompanhamento Contínuo</h3>
+            <p>Acompanhamos a evolução semanal e orientamos os encarregados de educação com relatórios claros.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Turmas Section -->
+    <section class="section section-bg" id="turmas">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Turmas Disponíveis</h2>
+          <p class="section-subtitle">Vagas limitadas para garantir qualidade no ensino</p>
+        </header>
+        <div class="cards-grid">
+          <article class="card card-glass">
+            <span class="badge badge-gold" style="margin-bottom: var(--space-4);">Turma Outubro</span>
+            <h3>4.º/5.º Ano - Reforço Escolar</h3>
+            <p style="margin: var(--space-4) 0;">Língua Portuguesa, Matemática e Cultura Geral</p>
+            <p>Horários: 14h30-16h30 (Seg/Qua/Sex)</p>
+            <p style="margin-top: var(--space-4); color: var(--color-text-secondary);">Máximo 8 alunos por turma</p>
+            <a href="#contato" class="btn btn-primary" style="margin-top: var(--space-6);">Reservar Vaga</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Sobre o MGAT</h2>
+        </header>
+        <div class="content-block-centered">
+          <article class="card card-glass" style="max-width: 800px; margin: 0 auto; text-align: left;">
+            <p style="font-size: var(--font-size-lg); line-height: var(--line-height-relaxed);">
+              O <strong>MGAT Explicações</strong> apoia alunos do 4.º, 5.º e 6.º anos no desenvolvimento das suas competências escolares. 
+              Trabalhamos para tornar a aprendizagem mais simples, prática e acompanhada, em parceria com os pais e encarregados de educação.
+            </p>
+            <div style="margin-top: var(--space-8); display: flex; gap: var(--space-8); flex-wrap: wrap; justify-content: center;">
+              <div style="text-align: center;">
+                <div style="font-size: var(--font-size-4xl); font-weight: var(--font-weight-bold); color: var(--color-gold);">8</div>
+                <div style="color: var(--color-text-secondary);">Alunos máx/turma</div>
+              </div>
+              <div style="text-align: center;">
+                <div style="font-size: var(--font-size-4xl); font-weight: var(--font-weight-bold); color: var(--color-gold);">3</div>
+                <div style="color: var(--color-text-secondary);">Disciplinas</div>
+              </div>
+              <div style="text-align: center;">
+                <div style="font-size: var(--font-size-4xl); font-weight: var(--font-weight-bold); color: var(--color-gold);">100%</div>
+                <div style="color: var(--color-text-secondary);">Acompanhamento</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato/Reserva Section -->
+    <section class="section section-bg" id="contato">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Reservar Vaga</h2>
+          <p class="section-subtitle">Preencha o formulário e entraremos em contacto via WhatsApp</p>
+        </header>
+        <form id="reserva-form" class="form card card-glass" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="nome_encarregado">Nome do encarregado *</label>
+            <input type="text" id="nome_encarregado" name="nome_encarregado" class="form-input" required autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="telefone">Telefone *</label>
+            <input type="tel" id="telefone" name="telefone" class="form-input" required autocomplete="tel" placeholder="+244 XXX XXX XXX">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="nome_crianca">Nome da criança *</label>
+            <input type="text" id="nome_crianca" name="nome_crianca" class="form-input" required autocomplete="given-name">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="idade">Idade da criança *</label>
+            <input type="number" id="idade" name="idade" class="form-input" required min="9" max="13" placeholder="Ex: 10">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="ano">Ano escolar *</label>
+            <select id="ano" name="ano" class="form-select" required>
+              <option value="">Selecionar ano</option>
+              <option value="4.º ano">4.º ano</option>
+              <option value="5.º ano">5.º ano</option>
+              <option value="6.º ano">6.º ano</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Disciplinas com dificuldade</label>
+            <div class="checkbox-group">
+              <label class="checkbox-item">
+                <input type="checkbox" name="disciplinas" value="Português">
+                <span>Português</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="disciplinas" value="Matemática">
+                <span>Matemática</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="disciplinas" value="Cultura Geral">
+                <span>Cultura Geral</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="dificuldades">Dificuldades específicas (opcional)</label>
+            <textarea id="dificuldades" name="dificuldades" class="form-textarea" rows="3" placeholder="Descreva as principais dificuldades da criança..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="horario">Horário preferido *</label>
+            <select id="horario" name="horario" class="form-select" required>
+              <option value="">Selecionar horário</option>
+              <option value="14h30-16h30 Seg/Qua/Sex">14h30-16h30 - Seg/Qua/Sex</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="conhecimento">Como conheceu o MGAT *</label>
+            <select id="conhecimento" name="conhecimento" class="form-select" required>
+              <option value="">Selecionar opção</option>
+              <option value="Instagram">Instagram</option>
+              <option value="Status">Status/WhatsApp</option>
+              <option value="Indicação">Indicação de conhecido</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">
+            Enviar para WhatsApp
+          </button>
+
+          <p id="reserva-mensagem" class="form-message" aria-live="polite"></p>
+        </form>
+
+        <div style="margin-top: var(--space-12); padding: var(--space-6); background: rgba(255,255,255,.05); border-radius: var(--radius-xl); text-align: center;">
+          <p style="margin-bottom: var(--space-3);"><strong>Contactos diretos:</strong></p>
+          <p style="font-size: var(--font-size-lg); color: var(--color-gold);">936 758 420 | 950 425 970</p>
+          <p style="margin-top: var(--space-3); color: var(--color-text-secondary);">Local: Kapolo 2, estrada nova</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-text">Juntos pelo sucesso dos nossos alunos! &copy; 2024 MGAT Explicações</p>
+    </footer>
+  </main>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

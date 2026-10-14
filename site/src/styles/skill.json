@@ -1,0 +1,16 @@
+{
+  "name": "mgat-design-system",
+  "description": "MGAT Design System - Complete visual design system for educational/tutoring websites. Includes color palette, typography, components (buttons, cards, forms, navigation), background patterns, and responsive layouts. Ready to copy and implement on any site.",
+  "version": "1.0.0",
+  "author": "MGAT Explicações",
+  "keywords": ["design-system", "css", "components", "educational", "tutoring", "glass-morphism"],
+  "files": {
+    "design-tokens.css": "CSS custom properties for colors, spacing, typography",
+    "components.css": "Reusable component styles (buttons, cards, forms, nav)",
+    "layout.css": "Layout patterns (sidebar, hero, sections, grid)",
+    "backgrounds.css": "Background patterns and gradients",
+    "main.js": "JavaScript for interactions (sidebar, form submission)",
+    "index.html": "Reference HTML structure",
+    "README.md": "Implementation guide"
+  }
+}

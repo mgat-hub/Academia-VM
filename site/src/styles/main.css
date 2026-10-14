@@ -1,0 +1,16 @@
+/* ==========================================================================
+   MGAT DESIGN SYSTEM - Main Entry Point
+   Import this file to use the complete design system
+   ========================================================================== */
+
+/* 1. Design Tokens (must be first) */
+@import './design-tokens.css';
+
+/* 2. Layout Patterns */
+@import './layout.css';
+
+/* 3. Components */
+@import './components.css';
+
+/* 4. Backgrounds */
+@import './backgrounds.css';
